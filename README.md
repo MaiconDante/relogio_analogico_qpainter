@@ -8,11 +8,7 @@ O aplicativo exibe um relógio analógico moderno com atualização em tempo rea
 
 # 📸 Preview
 
-Adicione screenshots do projeto aqui futuramente:
-
-```txt
-docs/images/preview.png
-```
+![Preview](docs/images/preview.png)
 
 ---
 
