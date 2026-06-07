@@ -39,7 +39,7 @@ class AnalogClock(QWidget):
         # =========================
 
         border_pen = QPen(QColor("#E2E8F0"))
-        border_pen.setWidth(4)
+        border_pen.setWidth(6)
 
         painter.setPen(border_pen)
 
@@ -71,6 +71,28 @@ class AnalogClock(QWidget):
             painter.rotate(30)
 
         # =========================
+        # Marcações dos minutos
+        # =========================
+
+        minute_mark_pen = QPen(QColor("#475569"))
+        minute_mark_pen.setWidth(2)
+
+        painter.setPen(minute_mark_pen)
+
+        for _ in range(60):
+
+            if _ % 5 != 0:
+
+                painter.drawLine(
+                    0,
+                    int(-radius + 25),
+                    0,
+                    int(-radius + 40)
+                )
+
+            painter.rotate(6)
+
+        # =========================
         # Hora atual
         # =========================
 
@@ -93,6 +115,13 @@ class AnalogClock(QWidget):
 
         painter.setPen(hour_hand_pen)
 
+        glow_pen = QPen(QColor(56, 189, 248, 80))
+        glow_pen.setWidth(16)
+
+        painter.setPen(glow_pen)
+
+        painter.setPen(hour_hand_pen)
+
         painter.drawLine(0, 20, 0, int(-radius * 0.5))
 
         painter.restore()
@@ -107,6 +136,12 @@ class AnalogClock(QWidget):
 
         minute_pen = QPen(QColor("#F8FAFC"))
         minute_pen.setWidth(6)
+
+        glow_pen = QPen(QColor(255, 255, 255, 60))
+
+        glow_pen.setWidth(12)
+
+        painter.setPen(glow_pen)
 
         painter.setPen(minute_pen)
 
@@ -138,7 +173,11 @@ class AnalogClock(QWidget):
         painter.setBrush(QColor("#F8FAFC"))
         painter.setPen(Qt.NoPen)
 
-        painter.drawEllipse(-8, -8, 16, 16)
+        painter.drawEllipse(-10, -10, 20, 20)
+
+        painter.setBrush(QColor("#0F172A"))
+
+        painter.drawEllipse(-4, -4, 8, 8)
 
 app = QApplication(sys.argv)
 
