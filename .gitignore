@@ -1,0 +1,26 @@
+# Virtual Environment
+
+venv/
+.env/
+
+# Python Cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Qt / Build
+
+build/
+dist/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
+.DS_Store
+Thumbs.db
