@@ -1,74 +1,122 @@
-# 🕒 Analog Clock — QPainter
+# 🕒 Relógio Analógico com QPainter
 
-A modern analog clock built with Python and Qt using QPainter.
+Projeto desenvolvido em Python utilizando **PySide6** e **QPainter** para estudo de renderização gráfica, transformações e desenho customizado no Qt.
 
-This project was created to study:
-
-* QPainter
-* Transformations
-* Rotations
-* Anti-aliasing
-* Timers
-* Custom painting
-* Geometry drawing
-* Coordinate systems
+O aplicativo exibe um relógio analógico moderno com atualização em tempo real, efeitos visuais e renderização suave utilizando técnicas de pintura do framework Qt.
 
 ---
 
-## 📸 Preview
+# 📸 Preview
 
+Adicione screenshots do projeto aqui futuramente:
 
+```txt
+docs/images/preview.png
+```
 
-## 🚀 Technologies
+---
 
-* Python
+# 🚀 Tecnologias Utilizadas
+
+* Python 3
 * PySide6
-* Qt
+* Qt Framework
 * QPainter
 
 ---
 
-## 📦 Installation
+# 🎯 Objetivos do Projeto
 
-Clone the repository:
+Este projeto foi criado com foco em aprendizado de:
 
-```bash
-git clone 
+* `QPainter`
+* `paintEvent()`
+* Anti-aliasing
+* Transformações com `translate()`
+* Rotação com `rotate()`
+* Geometria 2D
+* Timers com `QTimer`
+* Atualização em tempo real
+* Custom Widgets
+* Renderização procedural
+
+---
+
+# ✨ Funcionalidades
+
+* Relógio analógico em tempo real
+* Ponteiros de horas, minutos e segundos
+* Marcações das horas e minutos
+* Efeito glow nos ponteiros
+* Interface moderna em tema escuro
+* Renderização suave com anti-aliasing
+* Janela personalizada com ícone
+
+---
+
+# 📂 Estrutura do Projeto
+
+```txt
+analog-clock/
+│
+├── assets/
+│   └── clock.ico
+│
+├── docs/
+│   └── images/
+│       └── preview.png
+│
+├── main.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
-Enter the folder:
+---
+
+# ⚙️ Instalação
+
+Clone o repositório:
 
 ```bash
-cd analog-clock
+git clone https://github.com/MaiconDante/relogio_analogico_qpainter.git
 ```
 
-Create virtual environment:
+Entre na pasta do projeto:
+
+```bash
+cd relogio_analogico_qpainter
+```
+
+Crie ambiente virtual:
+
+## Windows
 
 ```bash
 python -m venv venv
 ```
 
-Activate virtual environment:
-
-### Windows
+Ative o ambiente virtual:
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux / macOS
+## Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Install dependencies:
+Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run application:
+---
+
+# ▶️ Executando o Projeto
 
 ```bash
 python main.py
@@ -76,30 +124,38 @@ python main.py
 
 ---
 
-## 🎯 Features
+# 🧠 Conceitos Trabalhados
 
-* Smooth rendering with anti-aliasing
-* Real-time analog clock
-* Custom painted interface
-* Responsive drawing
-* Modern dark theme
+Durante o desenvolvimento foram utilizados conceitos importantes do Qt:
 
----
-
-## 📚 Learning Goals
-
-This project focuses on learning graphical rendering concepts using Qt:
-
-* `paintEvent()`
-* `QPainter`
-* `translate()`
-* `rotate()`
-* `QTimer`
-* Coordinate transformations
-* Custom widgets
+* Sistema de coordenadas
+* Desenho vetorial
+* Transformações geométricas
+* Rotação de objetos
+* Renderização customizada
+* Atualização automática da interface
+* Gerenciamento de pintura no Qt
 
 ---
 
-## 📄 License
+# 📚 Aprendizados
 
-This project is licensed under the MIT License.
+Este projeto ajudou no aprendizado de:
+
+* Desenvolvimento de interfaces gráficas com Qt
+* Renderização com QPainter
+* Organização de projetos desktop
+* Estruturação de aplicações gráficas em Python
+* Utilização de timers e animações simples
+
+---
+
+# 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por Maicon Dante.
