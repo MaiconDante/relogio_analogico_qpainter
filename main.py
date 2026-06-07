@@ -1,7 +1,7 @@
 import sys
 
 from PySide6.QtWidgets import QApplication, QWidget
-from PySide6.QtGui import QPainter, QColor, QPen
+from PySide6.QtGui import QPainter, QColor, QPen, QIcon
 from PySide6.QtCore import Qt, QTimer, QTime
 
 
@@ -10,6 +10,7 @@ class AnalogClock(QWidget):
         super().__init__()
 
         self.setWindowTitle("Analog Clock")
+        self.setWindowIcon(QIcon("assets/clock.ico"))
         self.resize(600, 600)
 
         # Timer
